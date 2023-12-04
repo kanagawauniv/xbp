@@ -1,7 +1,22 @@
 @charset "utf-8";
 
+.imagefont{
+  position: relative;
+}
+.imagefont img{
+  width:100%;
+}
+div {
+  transform-style: preserve-3d
+}
+p{
+  position: absolute;
+  z-index: 1;
+  transform: translate3d(0, 0, 100px);
+}
+
 .gallery {
-  --s: 250px; /* the size */
+  --s: 270px; /* the size */
   
   display: grid;
   transform-style: preserve-3d;
@@ -18,7 +33,7 @@
 .gallery img:nth-child(2) {--_t: rotateX(-90deg)}
 .gallery img:nth-child(3) {--_t: rotateY( 90deg) rotate(-90deg)}
 .gallery img:nth-child(4) {--_t: rotateX(180deg) rotate( 90deg)}
-.gallery img:nth-child(5) {--_t: rotateX( 90deg) rotate( 90deg)}
+.gallery img:nth-child(5) {--_t: rotateX( 90deg) rotate(-90deg)}
 .gallery img:nth-child(6) {--_t: rotateY(-90deg)}
 
 @keyframes r {
