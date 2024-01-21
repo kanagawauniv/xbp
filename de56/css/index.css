@@ -8,12 +8,11 @@ img {
 
 body {
     background-color:rgb(255, 95, 95);
-    padding:3em 0;
-    font-family:sans-serif;
   }
+
   .clip-favourites-container {
       clip-path: inset(0px 0px 0px 0px);
-    width:100%;
+    width:210%;
     height: 70px;
     margin:10px 0 20px 0;
     padding:0;
@@ -21,8 +20,6 @@ body {
   #clip-favourites {
       display: flex;
       flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
   }
   
   #clip-favourites div {
